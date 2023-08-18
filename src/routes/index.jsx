@@ -5,10 +5,11 @@ import Mainpage from '../pages/Mainpage'
 import Loading from '../pages/Loading'
 import Error from '../pages/Error'
 import Page3 from '../pages/Mainpage/pages/Page3'
+import Page2 from '../pages/Mainpage/pages/Page2'
 
 // 异步加载
 const Page1 = React.lazy(() => import('../pages/Mainpage/pages/Page1'));
-const Page2 = React.lazy(() => import('../pages/Mainpage/pages/Page2'));
+// const Page2 = React.lazy(() => import('../pages/Mainpage/pages/Page2'));
 const Ending = React.lazy(() => import('../pages/Ending'));
 const Match = React.lazy(() => import('../pages/Match'));
 const Letter1 = React.lazy(() => import('../pages/Mask/Letter1'));
