@@ -5,7 +5,7 @@ import Mainpage from '../pages/Mainpage'
 import Loading from '../pages/Loading'
 import Error from '../pages/Error'
 import Page3 from '../pages/Mainpage/pages/Page3'
-import Page2 from '../pages/Mainpage/pages/Page2'
+
 
 // 异步加载
 const Page1 = React.lazy(() => import('../pages/Mainpage/pages/Page1'));
@@ -33,10 +33,6 @@ export default [
     path: '/page1',
     element: <Suspense fallback={<Loading />}><Page1 /></Suspense>
   },  
-  {
-    path: '/page2',
-    element: <Suspense fallback={<Loading />}><Page2 /></Suspense>
-  },
   {
     path: '/page3',
     element: <Page3 />
