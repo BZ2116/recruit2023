@@ -1,0 +1,231 @@
+@PicStyle: {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@starStyle: {
+  @PicStyle();
+  width: 100vw;
+  height: 100vh;
+  z-index: -84;
+  top: 0;
+}
+
+#FlBack0 {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  height: 100vh;
+}
+
+#FLBack {
+  position: relative;
+  background-size: contain;
+  width: 100vw;
+  height: 1000vh;
+  background-repeat: repeat-y;
+  background-image: url('../../assets/FirstloadPic/背景.png');
+  animation: meteors 6s infinite backwards linear;
+}
+#FLBack2 {
+  position: absolute;
+  top: 0;
+  background-size: 100vw 100vh;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/FirstloadPic/背景2.png');
+}
+
+#Stone {
+  background-image: url('../../assets/FirstloadPic/陨石.png');
+  position: absolute;
+  background-size:contain;
+  height: 150vh;
+  width: 100vw;
+  top: 0;
+animation: Float 3s infinite alternate linear;
+}
+
+@keyframes Float {
+  from {
+    transform: translateY(-1vw)
+  }
+
+  to {
+    transform: translateY(1vw)
+  }
+}
+
+@keyframes meteors {
+  0% {
+    top: -500vh
+  }
+
+  100% {
+    top: 0vh;
+  }
+
+}
+
+#firstLoading {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#SpaceShip {
+  position: relative;
+  width: 100vw;
+  height: 77vw;
+
+}
+.SpaceShipMove{
+  animation: SpaceShipMove 3s cubic-bezier(0.35, -0.06, 0.62, 0.73) ;
+}
+
+@keyframes SpaceShipMove {
+  0%{
+    transform: translateY(0vh);
+  }
+  100%{
+    transform: translateY(-80vh);
+  }
+}
+
+#spaceShipbody {
+  background-image: url('../../assets/FirstloadPic/飞船.png');
+  @PicStyle();
+  width: 60vw;
+  height: 74.187vw;
+  z-index: 85;
+  right: 20vw;
+  left: 20vw;
+}
+
+#tail {
+  position: absolute;
+  background-image: url('../../assets/FirstloadPic/尾气.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20vw;
+  height: 22.758vw;
+  // padding-top: 10vh;
+  left: 40vw;
+  right: 40vw;
+  bottom: -11vw;
+  animation: tail 3s infinite cubic-bezier(0, 0, 0.93, 0.06) alternate;
+}
+
+@keyframes tail {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.loader {
+  opacity: 0;
+  margin-top: 2vh;
+  width: 50vw;
+  height: 1.5vh;
+  border-radius: 8px;
+  background-color: #47a7ff44;
+  margin-top: 10%;
+}
+
+.loader #bar {
+  height: 100%;
+  border-radius: 8px;
+  background-color: #ffffff;
+  animation: width7435 5s cubic-bezier(0.5, 0.02, 0.02, 0.89);
+  transition: all;
+  box-shadow: 0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 12px #fff,
+
+}
+
+#num {
+  font-size: 10vw;
+  font-family: "ziticqtezhanti";
+  color: white;
+  line-height: 1.2;
+  z-index: 58;
+  text-shadow: 0 0 30px  white;
+}
+
+@keyframes width7435 {
+  from {
+    width: 0px;
+  }
+
+  to {
+    width: 50vw;
+  }
+}
+
+
+
+#Star11 {
+  background-image: url("../../assets/BackPic/星星1.png");
+  @starStyle();
+  animation: starshine 1s infinite alternate;
+  top: 50vh;
+}
+
+#Star12 {
+  background-image: url("../../assets/BackPic/星星2.png");
+  @starStyle();
+  animation: starshine 2s 1s infinite alternate;
+  top: 40vh;
+}
+
+#Star13 {
+  background-image: url("../../assets/BackPic/星星3.png");
+  @starStyle();
+  animation: starshine 2s 1.5s infinite alternate;
+
+}
+
+#Star14 {
+  background-image: url("../../assets/BackPic/星星3.png");
+  @starStyle();
+  animation: starshine 2s 1.5s infinite alternate;
+  top: 20vh;
+}
+#pic111{
+  background-image: url('https://p1.music.126.net/kHOql6SHvQEiC-7KU7LCew==/109951168845796856.jpg?imageView&quality=89');
+  opacity: 0;
+}#pic222{
+  background-image: url('https://p1.music.126.net/tX9oBDbCXktbazq6e07Ifg==/109951168848450993.jpg?imageView&quality=89');
+  opacity: 0;
+}#pic333{
+  background-image: url('https://p1.music.126.net/NISFaP062v7COObYeJiBZQ==/109951168848472165.jpg?imageView&quality=89');
+  opacity: 0;
+}#pic444{
+  background-image: url('https://p1.music.126.net/vbkpuesooDtpo5rHHn_GSA==/109951168848419137.jpg?imageView&quality=89');
+  opacity: 0;
+}#pic555{
+  background-image: url('https://p1.music.126.net/AYydYhgR07WkgsHnRVFzzA==/109951168848465706.jpg?imageView&quality=89');
+  opacity: 0;
+}#pic666{
+  background-image: url('https://p1.music.126.net/nOjuNaVXWZJfshbr4AS9aw==/109951168848483517.jpg?imageView&quality=89');
+  opacity: 0;
+}

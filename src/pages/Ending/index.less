@@ -1,0 +1,85 @@
+
+#endBack {
+  background-image: url(../../assets/EndPic/背景.png);
+  width: 100vw;
+  height: 100vh;
+  background-size: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -50;
+}
+
+#endMeteors {
+  background-image: url(../../assets/EndPic/流星.png);
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  z-index: -50;
+  animation: meteorMove 2s  infinite linear;
+}
+
+@keyframes meteorMove {
+  0% {
+    transform: translate(62.8vw, -36.6vw);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-62.8vw, 36.6vw);
+    opacity: 0;
+  }
+}
+#endStars{
+  background-image: url(../../assets/EndPic/闪烁的星星.png);
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  z-index: -50;
+  animation: appearEnd 1.5s infinite alternate;
+}
+
+#ending {
+  width: 100vw;
+  height: 100vh;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: appearEnd 2s;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+
+@keyframes appearEnd {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+.savebutton {
+  animation: appear0 2s 1;
+  background-image: url(../../assets/EndPic/长按保存到相册.png);
+  height: 2vh;
+  width: 15.925vh;
+  background-size: contain;
+}
+
+.appearE {
+  display: none;
+}

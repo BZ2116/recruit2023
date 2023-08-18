@@ -1,0 +1,87 @@
+@PicStyle: {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#letterMask {
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(169, 169, 169, 0.207);
+  background-size: 100vh 100vw;
+  min-width: 350px;
+  backdrop-filter: blur(10px);
+}
+
+#Letter {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: 100vh 100vw;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: appearLetter 1s;
+  opacity: 1;
+  min-width: 350px;
+}
+
+
+
+#Letter p {
+  color: aliceblue;
+  font-size: 6vw;
+  margin-top: 0;
+  font-family: "DingTalk";
+}
+
+#letter1 {
+  background-image: url('../../../assets/LetterPic/信件.png');
+  @PicStyle();
+  position: relative;
+  width: 38.451vh;
+  height: 25vh;
+  margin-bottom: 10vh;
+  animation: shake 4s 1s infinite cubic-bezier(0.63, -0.33, 1, 1.95);
+}
+
+@keyframes shake {
+  5% {
+    transform: rotate(0deg);
+
+  }
+
+  6%,
+  6.5% {
+    transform: rotate(-3deg);
+  }
+
+  6.25% {
+    transform: rotate(-5deg);
+  }
+
+  8.5%,
+  9% {
+    transform: rotate(3deg);
+
+  }
+
+  8.75% {
+    transform: rotate(5deg);
+  }
+
+  7.5%,
+  10% {
+    transform: rotate(0deg);
+  }
+
+}

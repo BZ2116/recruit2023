@@ -1,0 +1,74 @@
+@pStyle: {
+  width: max-content;
+  font-size: 4.5vw;
+  text-shadow: 0 0 5px #fff,
+    0 0 20px #fff;
+  letter-spacing: 0.5vw;
+}
+
+
+#mainpage {
+  color: azure;
+  height: 100VH;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  animation: appear0 2s;
+}
+
+
+#MaintitleBox {
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Maintitle1 {
+  background-image: url('../../assets/BackPic/星河守护.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 8vh;
+  width: 29.181vh;
+}
+
+#Maintitle2 {
+  background-image: url('../../assets/BackPic/永无止境的挑战.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 2vh;
+  width: 27.45vh;
+  margin-top: 1.5vh;
+}
+
+#Maintitle3 {
+  background-image: url('../../assets/BackPic/欢迎来到星际帝国.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 2vh;
+  width: 23.07vh;
+  padding-top: 5vh;
+  animation: appear0 6s ;
+}
+
+.Centralstar {
+  background-image: url("../../assets/BackPic/中心星体.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 24vh;
+  width: 41.311vh;
+  z-index: 102;
+  animation: CentralstarFloat 3s infinite alternate;
+  padding-bottom: 20vh;
+}
+
+@keyframes appear0 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,766 @@
+@STAR: {
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+@STARShow: {
+  opacity: 1;
+  color: white;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 100;
+}
+
+@STARSPAN: {
+  font-family: "ziticqtezhanti";
+  font-size: 3vw;
+  width: 20vw;
+  text-align: center;
+}
+
+#page3 {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../../../../assets/LongpressPic/星球/背景.png);
+  z-index: 0;
+  overflow: hidden;
+
+  // perspective: 1000px;
+  .Stars1 {
+    background-image: url(../../../../assets/LongpressPic/星球/闪烁的星星.png);
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 30vw;
+    opacity: 0;
+    z-index: -20;
+    animation: moveZ 0.8s 2 linear backwards;
+  }
+
+  .Stars2 {
+    background-image: url(../../../../assets/LongpressPic/星球/闪烁的星星.png);
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 30vw;
+    opacity: 0;
+    z-index: -20;
+    animation: moveZ 1s 0.1s 2 linear backwards;
+  }
+
+  .Stars3 {
+    background-image: url(../../../../assets/LongpressPic/星球/闪烁的星星.png);
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 30vw;
+    opacity: 0;
+    z-index: -20;
+    animation: moveZ 1s 0.2s 2 linear backwards;
+  }
+}
+
+#MatchMask {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  width: 80vw;
+  height: 100vh;
+  background-size: 100vh 100vw;
+  min-width: 350px;
+  animation: appear 2s linear;
+  background-image: url(../../../../assets/LongpressPic/点击测试页面2.png);
+  width: 100vw;
+  height: 100vh;
+}
+
+#MatchMaskText {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 85vw;
+  height: 100vh;
+  animation: appear 2s linear;
+  z-index: 50;
+
+  #MatchMaskText1 {
+    color: white;
+    font-family: "ziticqtezhanti";
+    font-size: 5vw;
+    text-align: justify;
+    letter-spacing: 0.2vw;
+  }
+
+  #MatchMaskText2 {
+    text-align: justify;
+    color: white;
+    font-family: "ziticqtezhanti";
+    font-size: 5vw;
+    line-height: 4vh;
+    text-indent: 10vw;
+  }
+
+  div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    span {
+      background-image: url(../../../../assets/LongpressPic/箭头.png);
+      height: 4vh;
+      width: 3.372vh;
+      background-size: contain;
+    }
+  }
+}
+
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes delayappear {
+  0% {
+    opacity: 0;
+  }
+50%{
+  opacity: 0;
+}
+  100% {
+    opacity: 1;
+  }
+}
+#matchButton {
+  width: 30vw;
+  color: black;
+  background-image: url(../../../../assets/LongpressPic//点击测试页面3.png);
+  height: 6vh;
+  width: 17.134vh;
+  background-size: contain;
+  margin-bottom: 5vh;
+  animation: delayappear 3s;
+}
+
+
+#page3start {
+  position: absolute;
+  z-index: -50;
+  width: 100vw;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#page3Stars {
+  background-image: url(../../../../assets/LongpressPic/星球/闪烁的星星.png);
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  z-index: -20;
+}
+
+
+.Stone6 {
+  background-image: url("../../../../assets//LongpressPic/星球/陨石1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 7vh;
+  width: 7vh;
+  z-index: 102;
+  right: 20vw;
+  top: 10vh;
+  animation: Stone1Move 2s cubic-bezier(0, 0.44, 0.48, 0.69);
+  z-index: 0;
+}
+
+.Stone61 {
+  animation: Float 3.5s infinite linear alternate;
+}
+
+.Stone7 {
+  background-image: url("../../../../assets//LongpressPic/星球/陨石4.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 7vh;
+  width: 7vh;
+  z-index: 102;
+  right: 10vw;
+  top: 60vh;
+  animation: Stone2Move 2s cubic-bezier(0, 0.52, 0.8, 1.06);
+  z-index: 0;
+}
+
+.Stone71 {
+  animation: Float 3.2s 0.5s infinite linear alternate;
+}
+.Stone8 {
+  background-image: url("../../../../assets//LongpressPic/星球/陨石5.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 7vh;
+  width: 7vh;
+  z-index: 102;
+  left: 10vw;
+  top: 70vh;
+  animation: Stone3Move 2s cubic-bezier(0, 0.52, 0.8, 1.06);
+  z-index: 0;
+}
+
+.Stone81 {
+  animation: Float 3.2s 0.5s infinite linear alternate;
+}
+
+@keyframes Stone3Move {
+  0% {
+    opacity: 0;
+    transform: scale(0.01);
+    left: 40vw;
+    top: 50vh;
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(0.01);
+    left: 80vw;
+    top: 40vh;
+  }
+
+  100% {
+    left: 10vw;
+    top: 70vh;
+    transform: scale(1);
+    opacity: 1;
+  }
+
+}
+@keyframes Stone2Move {
+  0% {
+    opacity: 0;
+    transform: scale(0.01);
+    left: 40vw;
+    top: 50vh;
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(0.01);
+    right: 40vw;
+    top: 30vh;
+  }
+
+  100% {
+    right: 10vw;
+    top: 60vh;
+    transform: scale(1);
+    opacity: 1;
+  }
+
+}
+
+@keyframes Stone1Move {
+  0% {
+    opacity: 0;
+    left: 50vw;
+    top: 30vh;
+    transform: scale(0.01);
+  }
+
+  50% {
+    opacity: 1;
+    right: 20vw;
+    top: 30vh;
+    transform: scale(0.01);
+  }
+
+  100% {
+    right: 20vw;
+    top: 10vh;
+    transform: scale(1);
+    opacity: 1;
+  }
+
+}
+
+
+#STARS {
+  background-image: url(../../../../assets/LongpressPic/首页6.png);
+  width: 100vw;
+  height: 100vh;
+  background-size: 100vw 100vh;
+  position: absolute;
+  top: auto;
+  background-repeat: no-repeat;
+  z-index: -5;
+  perspective: 400px;
+
+  .shineSTAR1 {
+    background-image: url(../../../../assets/LongpressPic/星球/闪烁的星星.png);
+    width: 100vw;
+    height: 100vh;
+    @STAR();
+    position: absolute;
+    top: 0;
+    animation: appear 1.5s infinite alternate linear;
+  }
+
+  .shineSTAR2 {
+    background-image: url(../../../../assets/LongpressPic/闪烁的星星.png);
+    width: 100vw;
+    height: 100vh;
+    @STAR();
+    position: absolute;
+    top: 0;
+    animation: appear 1.5s infinite alternate linear;
+  }
+
+  .liuxing {
+    background-image: url(../../../../assets/LongpressPic/星球/流星.png);
+    width: 100vw;
+    height: 100vh;
+    @STAR();
+    position: absolute;
+    top: 0;
+    animation: meteorMove 1.5s infinite linear;
+    z-index: 0;
+  }
+
+
+
+  @keyframes disappear {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+
+    }
+  }
+
+
+  .STAR1show {
+    background-image: url(../../../../assets/LongpressPic/星球/前端2.png);
+    animation: STAR1move 2s linear;
+    transform: scale(2.8) translate(12vw, 5vh);
+    height: 15vh;
+    width: 13.37vh;
+    left: 5vw;
+    top: 30vh;
+    @STAR();
+    @STARShow();
+
+    span {
+      @STARSPAN();
+    }
+  }
+
+
+  .STAR2show {
+    background-image: url(../../../../assets/LongpressPic/星球/后端2.png);
+    transform: scale(2.8) translate(10vw, 5vh);
+    animation: STAR2move 2s linear;
+    @STARShow();
+    @STAR();
+    height: 10vh;
+    width: 13.37vh;
+    left: 5vw;
+    top: 30vh;
+
+    span {
+      @STARSPAN();
+    }
+  }
+
+
+  .STAR3show {
+    background-image: url(../../../../assets/LongpressPic/星球/运维2.png);
+    transform: scale(2.5) translate(-5vw, 14vh);
+    animation: STAR3move 2s cubic-bezier(0.57, -0.14, 0.51, 1.15);
+    @STARShow();
+    @STAR();
+    height: 16vh;
+    width: 13.431vh;
+    top: 5vh;
+    left: 50vw;
+
+    span {
+      @STARSPAN();
+    }
+  }
+
+
+  .STAR4show {
+    background-image: url(../../../../assets/LongpressPic/星球/产品2png.png);
+    transform: scale(2.5) translate(10vw, -12vh);
+    animation: STAR4move 2s cubic-bezier(0.53, 0.03, 0.3, 0.98);
+    @STARShow();
+    @STAR();
+    height: 15vh;
+    width: 13.261vh;
+    top: 70vh;
+    left: 8vw;
+
+    span {
+      @STARSPAN();
+    }
+  }
+
+
+  .STAR5show {
+    background-image: url(../../../../assets/LongpressPic/星球/视觉2.png);
+    transform: scale(1.8) translate(3vw, 4vh);
+    animation: STAR5move 2s cubic-bezier(0, 0.24, 0.66, 0.61);
+    @STARShow();
+    left: 20vw;
+    @STAR();
+    height: 23vh;
+    width: 19.751vh;
+    top: 35vh;
+
+    span {
+      @STARSPAN();
+    }
+  }
+
+
+
+  .STAR6show {
+    background-image: url(../../../../assets/LongpressPic/星球/移动开发2.png);
+    transform: scale(2.2) translate(-12vw, -6vh);
+    animation: STAR6move 2s linear;
+    @STARShow();
+    left: 60vw;
+    @STAR();
+    height: 18vh;
+    width: 14.431vh;
+    top: 60vh;
+
+    span {
+      @STARSPAN();
+    }
+  }
+
+  .disappear {
+    animation: disappear 1s;
+    opacity: 0;
+  }
+
+  #STARFLOAT1 {
+    animation: Float1 4s infinite alternate linear;
+  }
+
+  #STARFLOAT2 {
+    animation: Float2 4s infinite alternate linear;
+  }
+
+  #STARFLOAT3 {
+    animation: Float3 4.5s infinite alternate linear;
+  }
+
+  #STARFLOAT4 {
+    animation: Float4 4s infinite alternate linear;
+  }
+
+  #STARFLOAT5 {
+    animation: Float5 4s infinite alternate linear;
+  }
+
+  #STARFLOAT6 {
+    animation: Float6 4.5s infinite alternate linear;
+  }
+}
+
+@keyframes STAR1move {
+  0% {
+    opacity: 0;
+    left: 40%;
+    top: 50%;
+    transform: scale(0.01);
+    color: transparent;
+  }
+
+  50% {
+    opacity: 1;
+    left: 45%;
+    top: 45%;
+    transform: scale(0.01);
+    color: transparent;
+  }
+
+  100% {
+    left: 5vw;
+    top: 30vh;
+    transform: scale(2.8) translate(12vw, 5vh);
+    color: white;
+    opacity: 1;
+  }
+}
+
+@keyframes STAR2move {
+  0% {
+    opacity: 0;
+    transform: scale(0.01);
+    color: transparent;
+  }
+
+  50% {
+    opacity: 1;
+    left: 40%;
+    top: 40%;
+    transform: scale(0.01);
+    color: transparent;
+  }
+
+  100% {
+    left: 5vw;
+    top: 30vh;
+    transform: scale(2.8) translate(10vw, 5vh);
+    color: white;
+    opacity: 1;
+  }
+}
+
+@keyframes STAR3move {
+  0% {
+    transform: scale(0.01) translate(10vw, 30vh);
+    color: transparent;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    left: 40%;
+    top: 40%;
+    transform: scale(0.01);
+    color: transparent;
+  }
+
+  100% {
+    transform: scale(2.5) translate(-5vw, 14vh);
+    color: white;
+  }
+}
+
+@keyframes STAR4move {
+  0% {
+    transform: scale(0.01) translate(40vw, -10vh);
+    color: transparent;
+    opacity: 0;
+  }
+50%{
+  opacity: 1;
+  left: 40%;
+  top: 40%;
+  transform: scale(0.01);
+  color: transparent;
+}
+  100% {
+    transform: scale(2.5) translate(10vw, -12vh);
+    color: white;
+  }
+}
+
+@keyframes STAR5move {
+  0% {
+    transform: scale(0.01) translate(30vw, 0);
+    color: transparent;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    left: 40%;
+    top: 40%;
+    transform: scale(0.01);
+    color: transparent;
+  }
+
+  100% {
+    transform: scale(1.8) translate(3vw, 4vh);
+    color: white;
+  }
+
+
+}
+
+@keyframes STAR6move {
+  0% {
+    transform: scale(0.01) translate(0, -30vh);
+    color: transparent;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    left: 40%;
+    top: 40%;
+    transform: scale(0.01);
+    color: transparent;
+  }
+
+  100% {
+    transform: scale(2.2) translate(-12vw, -6vh);
+    color: white;
+  }
+
+}
+
+@keyframes SHOW {
+  0% {
+    transform: scale(0.001) translateZ(-1000px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1) translateZ(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes Float {
+
+  0%,
+  100% {
+    transform: translateY(0)
+  }
+
+  25% {
+    transform: translateY(-1.5vw)
+  }
+
+  75% {
+    transform: translateY(1.5vw)
+  }
+}
+
+@keyframes Float1 {
+
+  0%,
+  100% {
+    transform: scale(2.8) translate(12vw, 5vh);
+  }
+
+  25% {
+    transform: scale(2.8) translate(12vw, 5.2vh);
+  }
+
+  75% {
+    transform: scale(2.8) translate(12vw, 4.8vh);
+  }
+}
+
+@keyframes Float2 {
+
+  0%,
+  100% {
+    transform: scale(2.8) translate(10vw, 5vh);
+  }
+
+  25% {
+    transform: scale(2.8) translate(10vw, 5.2vh);
+  }
+
+  75% {
+    transform: scale(2.8) translate(10vw, 4.8vh);
+  }
+}
+
+@keyframes Float3 {
+
+  0%,
+  100% {
+    transform: scale(2.5) translate(-5vw, 14vh);
+  }
+
+  25% {
+    transform: scale(2.5) translate(-5vw, 14.5vh);
+  }
+
+  75% {
+    transform: scale(2.5) translate(-5vw, 13.5vh);
+  }
+}
+
+@keyframes Float4 {
+
+  0%,
+  100% {
+    transform: scale(2.5) translate(10vw, -12vh);
+  }
+
+  25% {
+    transform: scale(2.5) translate(10vw, -12.3vh);
+  }
+
+  75% {
+    transform: scale(2.5) translate(10vw, -11.7vh);
+  }
+}
+
+
+@keyframes Float5 {
+
+  0%,
+  100% {
+    transform: scale(1.8) translate(3vw, 4vh);
+
+  }
+
+  25% {
+    transform: scale(1.8) translate(3vw, 4.3vh);
+  }
+
+  75% {
+    transform: scale(1.8) translate(3vw, 3.7vh);
+  }
+}
+
+@keyframes Float6 {
+
+  0%,
+  100% {
+    transform: scale(2.2) translate(-12vw, -6vh);
+  }
+
+  25% {
+    transform: scale(2.2) translate(-12vw, -6.3vh);
+  }
+
+  75% {
+    transform: scale(2.2) translate(-12vw, -5.7vh);
+  }
+}

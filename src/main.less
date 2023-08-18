@@ -1,0 +1,75 @@
+
+body {
+  margin: 0;
+  height: 100vh;
+  min-width: 350px; 
+  background-color: rgb(0, 0, 0);
+  user-select: none;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  min-width: 350px;
+  color: transparent;
+  overflow: hidden;
+}
+
+#stars {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -50;
+  min-width: 350px;
+}
+
+#alert {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 37vw;
+  right: 37vw;
+  font-size: 3vw;
+  letter-spacing: 1vw;
+  text-align: center;
+  animation: floatAlert 1.5s infinite alternate;
+  width: 24vw;
+  display: none;
+  text-shadow:  0 0 5px white;
+}
+ /*判断当前屏幕方向*/
+//  横向
+@media screen and (orientation: landscape) {
+  #root,.Background {
+    display: none;
+  }
+
+  #alert {
+    display: block;
+  }
+}
+// 竖向
+@media screen and (orientation:portrait) {
+  #root,.Background {
+    display: block;
+  }
+  #alert {
+    display: none;
+  }
+}
+@keyframes floatAlert {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+

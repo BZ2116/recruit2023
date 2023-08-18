@@ -1,0 +1,84 @@
+@text: {
+  color: azure;
+  letter-spacing: 1vw;
+  position: absolute;
+  line-height: 5vh;
+  text-indent: 2em;
+  text-align: justify;
+  animation: text1Appear 4s;
+  font-size: 2vmax;
+  overflow: hidden;
+}
+
+
+#page1 {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 350px;
+  font-family: "DingTalk"
+}
+
+
+#text1 {
+  color: azure;
+  letter-spacing: 1vw;
+  line-height: 5vh;
+  text-indent: 2em;
+  text-align: justify;
+  animation: text1Appear 2s;
+  font-size: 2vmax;
+  overflow: hidden;
+  
+  top: 40%;
+  p{
+   margin: 0 10vw;
+   text-align: justify;
+  }
+}
+
+@keyframes text1Appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+#next1 {
+  font-size: 3vh;
+  width: 3vh;
+  height: 3vh;
+  color: aliceblue;
+  bottom: 30vh;
+  margin-top: 8em;
+  padding-right: 2vh;
+  animation: button1Appear 4s;
+  
+}
+
+
+@keyframes button1Appear {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+#text2{
+  @text();
+}

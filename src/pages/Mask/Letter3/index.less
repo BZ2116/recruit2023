@@ -1,0 +1,107 @@
+#letter3 {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  animation: appear 1s;
+
+  #letter3T {
+    font-size: 1.8vh;
+    font-family: "Adobe Heiti Std";
+    color: rgb(255, 255, 255);
+    line-height: 1.264;
+    letter-spacing: 0.5vh;
+    z-index: 170;
+    margin: 8vh 5vh 0;
+    text-align: justify;
+
+  }
+
+  #letter3Back {
+    background-image: url(../../../assets/LetterPic/边框.png);
+    width: 90vw;
+    height: 80vh;
+    background-size: 90vw 80vh;
+    margin-top: 5vh;
+  }
+}
+
+
+#teamChoose {
+  font-size: 1.4vh;
+  letter-spacing: 0.3vh;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  bottom: 5%;
+  color: white;
+  margin: 0 8vw;
+  text-align: justify;
+  font-family: "Adobe Heiti Std";
+
+
+  div {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    animation: appearLetter 2.5s;
+    width: fit-content;
+
+    input {
+      width: 1vh;
+      height: 1vh;
+    }
+
+    input[type="radio"]:checked+label {
+      background-size: contain;
+      color: rgb(124, 207, 255);
+      font-size: 1.5vh;
+    }
+
+  }
+}
+
+/***按钮样式*****/
+button {
+  padding: 0 4vw;
+  font-size: 4vw;
+  margin-top: 3vh;
+  height: 3em;
+  border-radius: 2.5vh;
+  animation: appear 2s;
+  background-image: url(../../../assets/LetterPic/前往联盟.png);
+  height: 8vh;
+  width: 18.619vh;
+  background-size: contain;
+}
+
+
+#letter3Mask {
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(169, 169, 169, 0.207);
+  background-size: 100vh 100vw;
+  min-width: 350px;
+  backdrop-filter: blur(5px);
+  z-index: -1;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,258 @@
+@match1: {
+  font-size: 2.5vh;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "DingTalk";
+  line-height: 0.95;
+  z-index: 57;
+  animation: appear 1.5s;
+}
+
+@match1content: {
+  font-size: 3.5vh;
+  display: contents;
+  font-family: "DingTalk";
+  line-height: 0.594;
+  letter-spacing: 1vh;
+}
+
+@fe: rgb(255, 254, 197);
+@be: rgb(160, 255, 218);
+@sre:rgb(160, 207, 255);
+@vd: rgb(255, 146, 161);
+@md: rgb(171, 160, 255);
+@pp: rgb(255, 194, 139);
+
+#matchingPage {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+}
+
+#matchMeteors {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -50;
+  top: 0;
+  background-image: url(../../assets/MatchPic/流星.png);
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  animation: meteorMove 2s  infinite linear;
+}
+
+@keyframes meteorMove {
+  0% {
+    transform: translate(32.4vw, -18.3vw);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-32.4vw, 18.3vw);
+    opacity: 0;
+  }
+}
+
+#shinningStars {
+  background-image: url(../../assets/MatchPic/闪烁的星星.png);
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  animation: appear 1.5s infinite alternate;
+  z-index: -50;
+}
+
+#matchBack {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -50;
+  top: 0;
+  background-image: url(../../assets/MatchPic/匹配背景.png);
+  width: 100vw;
+  height: 100vh;
+  background-size: contain
+}
+
+.fe {
+  @match1();
+
+  #teamName,
+  #matchDgree {
+    @match1content();
+    color: @fe;
+  }
+
+}
+
+.be {
+  @match1();
+
+  #teamName,
+  #matchDgree {
+    @match1content();
+    color: @be;
+  }
+}
+
+.sre {
+  @match1();
+
+  #teamName,
+  #matchDgree {
+    @match1content();
+    color: @sre;
+  }
+}
+
+.vd {
+  @match1();
+
+  #teamName,
+  #matchDgree {
+    @match1content();
+    color: @vd;
+  }
+}
+
+.md {
+  @match1();
+
+  #teamName,
+  #matchDgree {
+    @match1content();
+    color: @md;
+  }
+}
+
+.pp {
+  @match1();
+
+  #teamName,
+  #matchDgree {
+    @match1content();
+    color: @pp;
+  }
+}
+
+
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#match2last {
+  background-image: url('../../assets/MatchPic/(当前为红岩星系最后一支战队).png');
+  height: 1.5vh;
+  width: 22.725vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 5% auto 0;
+}
+
+#match5 {
+  display: flex;
+  justify-content: space-around;
+  color: black;
+  width: 100vw;
+  margin-bottom: 5vh;
+  animation: appear 1.5s;
+
+
+  div:first-child {
+    background-image: url(../../assets/MatchPic/放弃联盟_.png);
+    background-size: contain;
+    width: 16.044vh;
+    height: 7vh;
+  }
+
+  & div:last-child {
+    background-image: url(../../assets/MatchPic/进行联盟.png);
+    background-size: contain;
+    width: 16.044vh;
+    height: 7vh;
+  }
+}
+
+
+@content: {
+  background-size: contain;
+  height: 40vh;
+  width: 42.766vh;
+  margin-bottom: 5vh;
+  animation: appear 1.5s;
+
+}
+
+
+.fecontent {
+  background-image: url(../../assets/MatchPic/fe内容.png);
+  @content();
+}
+
+.becontent {
+  background-image: url(../../assets/MatchPic/be内容.png);
+  @content();
+}
+
+.srecontent {
+  background-image: url(../../assets/MatchPic/sre内容.png);
+  @content();
+}
+
+.vdcontent {
+  background-image: url(../../assets/MatchPic/vd内容.png);
+  @content();
+}
+
+.mdcontent {
+  background-image: url(../../assets/MatchPic/md内容.png);
+  @content();
+}
+
+.ppcontent {
+  background-image: url(../../assets/MatchPic/pp内容.png);
+  @content();
+}
+
+#match2 {
+  background-image: url('../../assets/MatchPic/(匹配度较低).png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 9.525vh;
+  height: 1.5vh;
+  z-index: 47;
+
+}
+
+
+#match13 {
+  display: flex;
+  width: 94%;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  animation: appear 6s;
+}
+
+.match2Md {
+  margin-right: 8%;
+}

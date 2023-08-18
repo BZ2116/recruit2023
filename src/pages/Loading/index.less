@@ -1,0 +1,151 @@
+.spinner {
+  height: 50px;
+  width: max-content;
+  font-size: 4vw;
+  font-weight: 600;
+  font-family: monospace;
+  color: #f5f5f5;
+  filter: drop-shadow(0 0 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0 2vw #fff;
+  margin-top: 5vh;
+}
+
+.spinner span {
+  animation: loading6454 1.75s ease infinite;
+  padding: 0 1.5vw;
+}
+
+.spinner span:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.spinner span:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.spinner span:nth-child(4) {
+  animation-delay: 0.75s;
+}
+
+.spinner span:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.spinner span:nth-child(6) {
+  animation-delay: 1.25s;
+}
+
+.spinner span:nth-child(7) {
+  animation-delay: 1.5s;
+}
+
+@keyframes loading6454 {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
+
+#loadingBack {
+  position: absolute;
+  top: 0;
+  background-image: url(../../assets/LoadingPic/加载中.png);
+  width: 100vw;
+  height: 100vh;
+  background-size: 100vw 100vh;
+  z-index: -100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  #spaceShip {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    animation: float 3s infinite linear;
+
+    #shipBody {
+      background-image: url(../../assets/LoadingPic/小飞船.png);
+      height: 10vh;
+      width: 11.317vh;
+      background-size: contain;
+
+    }
+
+    #shiptail {
+      background-image: url(../../assets/LoadingPic/喷气.png);
+      height: 3vh;
+      width: 5.1612vh;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-right: -3vw;
+      animation: tail 3s infinite cubic-bezier(0, 0, 0.93, 0.06) alternate;
+    }
+  }
+
+  #loadingMeteors {
+    background-image: url(../../assets/LoadingPic/流星.png);
+    width: 1000vw;
+    height: 15vh;
+    background-size: 500vw 15vh;
+    background-repeat: repeat-x;
+    position: absolute;
+    left: 0;
+    z-index: -10 ;
+    animation: meteorsMove 5s infinite forwards;
+  }
+
+}
+
+@keyframes meteorsMove {
+  0% {
+    left: -500vw;
+  }
+
+  100% {
+  left: 0;
+
+  }
+}
+
+@keyframes tail {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes float {
+  0%,50%,100%{
+    transform: translateY(0);
+  }
+  25%{
+    transform: translateY(-0.5vh);
+  }
+  75%{
+    transform: translateY(0.5vh);
+  }
+}
